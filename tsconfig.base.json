@@ -10,11 +10,30 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@app/directives/*": [
+        "packages/directives/src/lib/*"
+      ],
+      "@app/pipes/*": [
+        "packages/pipes/src/lib/*"
+      ],
+      "@app/todos/*": [
+        "packages/todos/src/lib/*"
+      ],
+      "@app/ui/*": [
+        "packages/ui/src/lib/*"
+      ]
+    }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }

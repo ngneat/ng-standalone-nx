@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "angular-standalone",
+  "npmScope": "app",
   "affected": {
     "defaultBase": "main"
   },
@@ -36,11 +36,29 @@
     },
     "@nrwl/angular:library": {
       "linter": "eslint",
-      "unitTestRunner": "jest"
+      "unitTestRunner": "jest",
+      "skipModule": true
     },
     "@nrwl/angular:component": {
-      "style": "scss"
+      "style": "scss",
+      "standalone": true,
+      "inlineTemplate": true,
+      "inlineStyle": true,
+      "flat": true,
+      "changeDetection": "OnPush",
+      "skipTests": true
+    },
+    "@schematics/angular:pipe": {
+      "standalone": true,
+      "skipTests": true
+    },
+    "@schematics/angular:directive": {
+      "standalone": true,
+      "skipTests": true
     }
+  },
+  "workspaceLayout": {
+    "libsDir": "packages"
   },
   "defaultProject": "platform"
 }

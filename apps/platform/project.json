@@ -1,7 +1,7 @@
 {
   "projectType": "application",
   "sourceRoot": "apps/platform/src",
-  "prefix": "angular-standalone",
+  "prefix": "app",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
