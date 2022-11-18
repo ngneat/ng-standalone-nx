@@ -1,1 +1,1 @@
-## Angular Stanalone Starter with NX
+## Angular Standalone Starter with NX
